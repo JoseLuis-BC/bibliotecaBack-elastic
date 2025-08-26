@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://biblioteca-online-nine.vercel.app/") // Cambia si tu front está en otro puerto
+                        .allowedOrigins("http://biblioteca-online-production-8bc9.up.railway.app/") // Cambia si tu front está en otro puerto
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");
             }
