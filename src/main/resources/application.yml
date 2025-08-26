@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: buscador-service
+  data:
+    elasticsearch:      
+#      uris: http://elasticsearch:9200
+      uris: https://7848657b6c8b482491ab51a0a45104bd.us-central1.gcp.cloud.es.io:443
+      username: elastic
+      password: cjLDY9dUJHFGISV7BlFMGK2k
+
+      #cluster-nodes: localhost:9200
+      repositories:
+        enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://bibliotecaback-eureka-production.up.railway.app/eureka/
+#      defaultZone: http://eureka-service-container:8761/eureka/
+server:
+  port: 8082
